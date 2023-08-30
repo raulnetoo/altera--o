@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário e JavaScript</title>
+</head>
+<body>
+    <form id="meuForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+        <button type="button" onclick="atualizarNome()">Atualizar Nome</button>
+    </form>
+
+    <p id="nomeMostrado">Nome: <span id="nomeSpan">John Doe</span></p>
+
+    <script>
+        function atualizarNome() {
+            var novoNome = document.getElementById("nome").value;
+            document.getElementById("nomeSpan").textContent = novoNome;
+        }
+    </script>
+</body>
+</html>
